@@ -52,7 +52,7 @@ class SingleOtpInput extends PureComponent {
     }
 
     if (isInputNum) {
-      return 'tel';
+      return 'number';
     }
 
     return 'text';
@@ -86,6 +86,7 @@ class SingleOtpInput extends PureComponent {
             index + 1
           }`}
           autoComplete="one-time-code"
+          inputMode="numeric"
           style={Object.assign(
             { width: '1em', textAlign: 'center' },
             isStyleObject(inputStyle) && inputStyle,
